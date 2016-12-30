@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<item name="tag_first" type="id"></item>
+    <item name="tag_second" type="id"></item>
+    
+    <string name="app_name">NewMedicine</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- str开头的为string-->
+    <!-- 登陆 -->
+    <string name="hello">Hello World, YemianActivity!</string>
+    <string name="strUer">账号</string>
+    <string name="strUerName">用户昵称</string>
+    <string name="strInputUer">用户账号</string>
+    <string name="strPassworld">密码:</string>
+    <string name="strInputPassworld">输入密码</string>
+    <string name="strInputPassworldA">再次输入</string>
+    <string name="opt_remember">记住密码</string>
+    <string name="strLogin">登录</string>
+    <string name="strRegister">注册</string>
+    <!-- 注册 -->
+    <string name="sregistered">注册账号</string>
+    
+    <!-- 要闻 -->
+    <string name="strMedicalAnecdotes">医学趣闻</string>
+    <string name="strHealthKnowledge">健康知识</string>
+    <!-- 药搜 -->
+    <string name="sexit">退出</string>   
+    <string name="strSearchContent">搜索内容</string>
+    <string name="strSearching">搜索一下</string>
+    <string name="strSearching2">搜索</string>
+    <string name="strFilter">筛选条件</string>
+    <string name="strInformation">信息</string>
+    <string name="strUniteSearch">联合查询</string>
+  
+    <!-- 药库 -->
+    <string name="strDrugLibrary">药库</string>
+    <string name="strChemicalDrugs">化学药品</string>
+    <string name="strHerbsAndPieces">药材及饮片</string>
+    <string name="strPharmaceuticalExcipients">药用辅料</string>
+    <string name="strProprietaryChineseMedicines">中成药</string>
+    <string name="strVegetableFatsAndExtracts">植物油脂及提取物</string>
+    <string name="strChemicalDrugs6">生物制剂</string>
+    <string name="strDrugList">药品列表</string>
+    <!-- 药谈 -->
+    <string name="strDrugBBS">药谈</string>
+    <string name="strPosting">发帖</string>
+    <string name="strTitle">标题</string>
+    <string name="strSure">确定</string>
+    <string name="strUpPhoto">上传图片</string>
+    <string name="strPostingContent">发帖内容~</string>
+	<!-- 其他 -->
+	<string name="strOther">其他</string>
+    <!-- 左菜单 -->
+	<!-- 修改信息 -->
+	<string name="strChangInformation">修改信息</string>
+	<string name="strUerInformation">个人信息</string>
+	<!-- 好友管理 -->
+	<!-- 更换皮肤 -->
+	<!-- 下载数据 -->
+	<!-- 进行测试 -->
+	
+	<!-- 右菜单 -->
+	<!-- 用户反馈 -->
+	<string name="strFeedBack">反馈</string>
+	<string name="strSumit">提交反馈</string>
+	<string name="strContact">请留下你的联系方式（qq 邮箱 电话）</string>
+    <!-- 其他 -->
+    <!-- 关于软件 -->
+    <!-- 退出软件 -->
+    
+    
+    <string name="strfeedback">用的不爽？来吐槽吧。。。</string>
+    <string name="message6">找回密码</string>
+    <string name="message8">输入密码</string>
+    <string name="message9">确认密码</string>
+    <string name="message10">真实姓名</string>
+    <string name="message12">E-mail:</string>
+    <string name="message13">性别:</string>
+    <string name="message14">男:</string>
+    <string name="message15">女:</string>
+    <string name="message16">你的答案:</string>
+    <string name="message17">注册</string>
+    <string name="message18">重置</string>
+    <string name="message19">退出</string>
+    <string name="message11">提示问题</string>
+</resources>

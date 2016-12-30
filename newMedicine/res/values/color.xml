@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+   
+    <color name="btn_register_normal">#2dafa3</color>
+    <color name="btn_register_pressed">#4ebcd3</color>
+    <color name="btn_logout_normal">#d33f3f</color>
+    <color name="btn_logout_pressed">#DA5A4D</color>
+    <color name="btn_login_normal">#007086</color>
+    <color name="btn_login_pressed">#303744</color>
+     <color name="btn_serach_normal">#4ebcd3</color> 
+    <color name="btn_serach_pressed">#303744</color>
+	<color name="common_top_bar_blue">#4ebcd3</color>
+	<color name="btn_serach">#4169E1</color>
+	<color name="cc">#144478</color>
+
+</resources>

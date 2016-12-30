@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f0eb"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@color/common_top_bar_blue" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/strInformation"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    
+	<RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         
+        android:layout_marginRight="5dip"
+        android:layout_marginLeft="5dip"
+        android:background="@drawable/login_back" >
+
+             <ListView 
+                 android:id="@+id/search_listview_showinformation" 
+                 android:layout_width="fill_parent" 
+                 android:layout_height="fill_parent" > 
+            </ListView> 
+
+<!--          	android:layout_below="@id/rt" -->
+<!--        	android:layout_alignParentBottom="true"   -->
+           
+        </RelativeLayout>
+
+</LinearLayout>

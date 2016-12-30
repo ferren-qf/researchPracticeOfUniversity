@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        <RelativeLayout
+            android:id="@+id/rt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_top_bar"
+            android:background="@color/common_top_bar_blue" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/strChangInformation"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/bbsposting_btn_commit"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="6dp"
+                android:background="@drawable/btn_style"
+                android:text="@string/strSure" />
+        </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/geren_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/geren_top"
+                android:background="#E5E5E5"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" >
+
+                <LinearLayout
+                    android:id="@+id/linear_touxiang"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_shezhi"
+                    android:orientation="vertical"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:paddingTop="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:text="设置头像"
+                        android:textSize="10dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="5dp"
+                        android:background="#E5E5E5" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/img_touxing"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:paddingLeft="50dp"
+                            android:src="@drawable/default_users_avatar" />
+
+                        <TextView
+                            android:id="@+id/textView_xz"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:drawableTop="@drawable/take_picture_now"
+                            android:paddingRight="20dp"
+                            android:text="现在拍摄"
+                            android:textSize="8dp" />
+
+                        <TextView
+                            android:id="@+id/textView_xc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:drawableTop="@drawable/take_picture_now"
+                            android:paddingLeft="20dp"
+                            android:text="相册选取"
+                            android:textSize="8dp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_jiben"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/linear_touxiang"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_shezhi"
+                    android:orientation="vertical"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:paddingTop="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:text="基本资料"
+                        android:textSize="10dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="5dp"
+                        android:background="#E5E5E5" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp" >
+
+                        <ImageView
+                            android:id="@+id/img_edit_name1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:src="@drawable/item_edit" />
+
+                        <TextView
+                            android:id="@+id/text_niceng"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:text="　　昵称"
+                            android:textColor="#9A9A9A" />
+
+                        <TextView
+                            android:id="@+id/xianshi_nicheng"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@id/img_edit_name1"
+                            android:layout_toRightOf="@id/text_niceng"
+                            android:paddingLeft="10dp"
+                            android:text=" " />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignBottom="@id/img_edit_name1"
+                            android:background="#E5E5E5" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp" >
+
+                        <ImageView
+                            android:id="@+id/img_edit_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:src="@drawable/item_edit" />
+
+                        <TextView
+                            android:id="@+id/text_xingbie"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:text="　　性别"
+                            android:textColor="#9A9A9A" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignBottom="@id/img_edit_name"
+                            android:background="#E5E5E5" />
+
+                        <TextView
+                            android:id="@+id/xianshi_xingbie"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/text_xingbie"
+                            android:paddingLeft="10dp"
+                            android:text=" " />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp" >
+
+                        <ImageView
+                            android:id="@+id/img_edit_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:paddingBottom="5dp"
+                            android:src="@drawable/item_edit" />
+
+                        <TextView
+                            android:id="@+id/text_niceng"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:text="　　年龄"
+                            android:textColor="#9A9A9A" />
+
+                        <TextView
+                            android:id="@+id/xianshi_nianling"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@id/img_edit_name"
+                            android:layout_toRightOf="@id/text_niceng"
+                            android:paddingLeft="10dp"
+                            android:text=" " />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignBottom="@id/img_edit_name"
+                            android:background="#E5E5E5" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp" >
+
+                        <ImageView
+                            android:id="@+id/img_edit_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:paddingBottom="5dp"
+                            android:src="@drawable/item_edit" />
+
+                        <TextView
+                            android:id="@+id/text_niceng"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:text="个性签名"
+                            android:textColor="#9A9A9A" />
+
+                        <TextView
+                            android:id="@+id/xianshi_qianming"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@id/img_edit_name"
+                            android:layout_toRightOf="@id/text_niceng"
+                            android:paddingLeft="10dp"
+                            android:text=" " />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignBottom="@id/img_edit_name"
+                            android:background="#E5E5E5" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp" >
+
+                        <ImageView
+                            android:id="@+id/img_edit_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:paddingBottom="5dp"
+                            android:src="@drawable/item_edit" />
+
+                        <TextView
+                            android:id="@+id/text_niceng"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:text="常出没地"
+                            android:textColor="#9A9A9A" />
+
+                        <TextView
+                            android:id="@+id/xianshi_chumodi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@id/img_edit_name"
+                            android:layout_toRightOf="@id/text_niceng"
+                            android:paddingLeft="10dp"
+                            android:text=" " />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignBottom="@id/img_edit_name"
+                            android:background="#E5E5E5" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp" >
+
+                        <ImageView
+                            android:id="@+id/img_edit_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:paddingBottom="5dp"
+                            android:src="@drawable/item_edit" />
+
+                        <TextView
+                            android:id="@+id/text_niceng"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:text="兴趣爱好"
+                            android:textColor="#9A9A9A" />
+
+                        <TextView
+                            android:id="@+id/xianshi_like"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@id/img_edit_name"
+                            android:layout_toRightOf="@id/text_niceng"
+                            android:paddingLeft="10dp"
+                            android:text=" " />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignBottom="@id/img_edit_name"
+                            android:background="#E5E5E5" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp" >
+
+                        <ImageView
+                            android:id="@+id/img_edit_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:paddingBottom="5dp"
+                            android:src="@drawable/item_edit" />
+
+                        <TextView
+                            android:id="@+id/text_niceng"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:text="个人说明"
+                            android:textColor="#9A9A9A" />
+
+                        <TextView
+                            android:id="@+id/xianshi_shuoming"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@id/img_edit_name"
+                            android:layout_toRightOf="@id/text_niceng"
+                            android:paddingLeft="10dp"
+                            android:text=" " />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignBottom="@id/img_edit_name"
+                            android:background="#E5E5E5" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_mibao"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/linear_jiben"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_shezhi"
+                    android:orientation="vertical"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:paddingTop="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:text="密保"
+                        android:textSize="10dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="5dp"
+                        android:background="#E5E5E5" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp" >
+
+                        <ImageView
+                            android:id="@+id/img_edit_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:src="@drawable/item_edit" />
+
+                        <TextView
+                            android:id="@+id/text_niceng"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:text="新浪微博"
+                            android:textColor="#9A9A9A" />
+
+                        <TextView
+                            android:id="@+id/xianshi_sinabang"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@id/img_edit_name"
+                            android:layout_toRightOf="@id/text_niceng"
+                            android:paddingLeft="10dp"
+                            android:text=" " />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignBottom="@id/img_edit_name"
+                            android:background="#E5E5E5" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp" >
+
+                        <ImageView
+                            android:id="@+id/img_edit_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:src="@drawable/item_edit" />
+
+                        <TextView
+                            android:id="@+id/text_niceng"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:text="腾讯微博"
+                            android:textColor="#9A9A9A" />
+
+                        <TextView
+                            android:id="@+id/xianshi_qqweb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@id/img_edit_name"
+                            android:layout_toRightOf="@id/text_niceng"
+                            android:paddingLeft="10dp"
+                            android:text=" " />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignBottom="@id/img_edit_name"
+                            android:background="#E5E5E5" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp" >
+
+                        <ImageView
+                            android:id="@+id/img_edit_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:paddingBottom="5dp"
+                            android:src="@drawable/item_edit" />
+
+                        <TextView
+                            android:id="@+id/text_niceng"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:text="　　邮箱"
+                            android:textColor="#9A9A9A" />
+
+                        <TextView
+                            android:id="@+id/xianshi_qqemail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@id/img_edit_name"
+                            android:layout_toRightOf="@id/text_niceng"
+                            android:paddingLeft="10dp"
+                            android:text=" " />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignBottom="@id/img_edit_name"
+                            android:background="#E5E5E5" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

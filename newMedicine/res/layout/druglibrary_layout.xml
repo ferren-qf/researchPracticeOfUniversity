@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" -->
+<!--     android:layout_width="match_parent" -->
+<!--     android:layout_height="match_parent" -->
+<!--     android:orientation="vertical" > -->
+<!--     <LinearLayout -->
+<!-- 	    android:id="@+id/LinearLayout01" -->
+<!-- 	    android:layout_width="fill_parent" -->
+<!-- 	    android:layout_height="wrap_content" -->
+<!-- 	    android:layout_weight="1.0" -->
+<!-- 	    android:background="@drawable/background_b" -->
+<!-- 	    android:orientation="vertical" > -->
+		<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" >
+
+	    <RelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="@dimen/height_top_bar"
+	        android:background="@color/common_top_bar_blue" >
+
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerInParent="true"
+	            android:text="@string/strDrugLibrary"
+	            android:textColor="#ffffff"
+	            android:textSize="20sp" />
+	    </RelativeLayout>
+	  
+	  <RelativeLayout
+	     
+    		android:layout_width="match_parent"
+    		android:layout_height="match_parent"
+    		    
+	      android:layout_marginBottom="20.0px"
+	      android:layout_marginTop="100.0px" >
+
+	      <ImageButton
+	          android:id="@+id/ImageButton01"
+	          android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:layout_marginLeft="20dp"
+	          android:layout_marginTop="22dp"
+	          android:background="@drawable/biologicalagents" />
+
+	      <ImageButton
+	          android:id="@+id/ImageButton03"
+	          android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:layout_alignParentRight="true"
+	          android:layout_alignParentTop="true"
+	          android:layout_marginRight="28dp"
+	          android:layout_marginTop="55dp"
+	          android:background="@drawable/westernmedicinelibrary" />
+
+	      <ImageButton
+	          android:id="@+id/ImageButton02"
+	          android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:layout_alignParentBottom="true"
+	          android:layout_centerHorizontal="true"
+	          android:layout_marginBottom="50dp"
+	          android:background="@drawable/inthepharmacy" />
+	      
+	  </RelativeLayout>
+	    
+	  </RelativeLayout>
+
+<!-- 	</LinearLayout> -->
+
+<!--  菜单栏  -->
+
+<!-- 	  <RelativeLayout -->
+<!-- 	      android:id="@+id/RelativeLayout02" -->
+<!-- 	      android:layout_width="fill_parent" -->
+<!-- 	      android:layout_height="44.0dip" -->
+<!-- 	      android:background="@drawable/bottom" > -->
+
+<!-- 	      <ImageButton -->
+<!-- 	          android:id="@+id/shouye" -->
+<!-- 	          android:layout_width="wrap_content" -->
+<!-- 	          android:layout_height="wrap_content" -->
+<!-- 	          android:layout_alignParentLeft="true" -->
+<!-- 	          android:layout_centerVertical="true" -->
+<!-- 	          android:layout_marginLeft="34dp" -->
+<!-- 	          android:background="@drawable/drugnews" -->
+<!-- 	          android:clickable="true" /> -->
+
+<!-- 	      <ImageButton -->
+<!-- 	          android:id="@+id/xuexiluntan" -->
+<!-- 	          android:layout_width="wrap_content" -->
+<!-- 	          android:layout_height="wrap_content" -->
+<!-- 	          android:layout_alignTop="@+id/shouye" -->
+<!-- 	          android:layout_marginLeft="30dp" -->
+<!-- 	          android:layout_toRightOf="@+id/shouye" -->
+<!-- 	          android:background="@drawable/drugbbs" -->
+<!-- 	          android:clickable="true" /> -->
+
+<!-- 	      <ImageButton -->
+<!-- 	          android:id="@+id/yaodianjiansuo" -->
+<!-- 	          android:layout_width="wrap_content" -->
+<!-- 	          android:layout_height="wrap_content" -->
+<!-- 	          android:layout_alignTop="@+id/xuexiluntan" -->
+<!-- 	          android:layout_marginRight="30dp" -->
+<!-- 	          android:layout_toLeftOf="@+id/ziyuanxiazai" -->
+<!-- 	          android:background="@drawable/drugsearch" -->
+<!-- 	          android:clickable="true" /> -->
+
+<!-- 	      <ImageButton -->
+<!-- 	          android:id="@+id/ziyuanxiazai" -->
+<!-- 	          android:layout_width="wrap_content" -->
+<!-- 	          android:layout_height="wrap_content" -->
+<!-- 	          android:layout_alignParentRight="true" -->
+<!-- 	          android:layout_alignTop="@+id/yaodianjiansuo" -->
+<!-- 	          android:layout_marginRight="30dp" -->
+<!-- 	          android:background="@drawable/druglibrary" -->
+<!-- 	          android:clickable="true" /> -->
+<!-- 	  </RelativeLayout> -->
+
+<!-- </LinearLayout> -->

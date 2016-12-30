@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1C232A"
+    android:orientation="vertical" >
+    <View
+        android:id="@+id/v1"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#454545" />
+     <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="14dp"
+        android:text="左侧菜单"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+    <Button
+        android:padding="10dp"
+        android:id="@+id/left_btn_exam"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/v1"
+        android:layout_marginTop="3dp"
+        android:background="@null"
+        android:gravity="left"
+        android:text="开始考试"
+        android:textColor="#888888"
+        android:textSize="20sp" />
+
+   <View
+        android:id="@+id/v2"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/left_btn_exam"
+        android:background="#16497F" />
+
+
+   
+
+    <Button
+        android:id="@+id/left_btn_check"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/v2"
+        android:layout_marginTop="3dp"
+        android:background="@null"
+        android:gravity="left"
+        android:padding="10dp"
+        android:text="查看排名"
+        android:textColor="#888888"
+        android:textSize="20sp" />
+
+    <View
+        android:id="@+id/v3"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/left_btn_check"
+        android:background="#16497F" />
+    
+    <Button
+        android:id="@+id/left_btn_changeuerdata"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/v3"
+        android:layout_marginTop="3dp"
+        android:background="@null"
+        android:gravity="left"
+        android:padding="10dp"
+        android:text="管理好友"
+        android:textColor="#888888"
+        android:textSize="20sp" />
+
+    <View
+        android:id="@+id/v4"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/left_btn_changeuerdata"
+        android:background="#16497F" />
+    
+    <Button
+        android:id="@+id/left_btn_userinfor"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/v4"
+        android:layout_marginTop="3dp"
+        android:background="@null"
+        android:gravity="left"
+        android:padding="10dp"
+        android:text="个人信息"
+        android:textColor="#888888"
+        android:textSize="20sp" />
+   
+    <View
+        android:id="@+id/v5"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/left_btn_userinfor"
+        android:background="#16497F" />
+    <Button
+        android:id="@+id/left_btn_mement"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/v5"
+        android:layout_marginTop="3dp"
+        android:background="@null"
+        android:gravity="left"
+        android:padding="10dp"
+        android:text="更改信息"
+        android:textColor="#888888"
+        android:textSize="20sp" />
+   
+    <View
+        android:id="@+id/v6"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/left_btn_mement"
+        android:background="#16497F" />
+    <Button
+        android:id="@+id/left_btn_skin"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/v6"
+        android:layout_marginTop="3dp"
+        android:background="@null"
+        android:gravity="left"
+        android:padding="10dp"
+        android:text="设置皮肤"
+        android:textColor="#888888"
+        android:textSize="20sp" />
+   
+    <View
+        android:id="@+id/v7"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/left_btn_skin"
+        android:background="#16497F" />
+</RelativeLayout>

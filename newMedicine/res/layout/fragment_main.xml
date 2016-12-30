@@ -1,0 +1,135 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="match_parent"  
+    android:layout_height="match_parent"  
+    android:orientation="vertical" >  
+  
+    <FrameLayout  
+        android:id="@+id/content"  
+        android:layout_width="match_parent"  
+        android:layout_height="0dp"  
+        android:layout_weight="1" >  
+    </FrameLayout>  
+  
+    <LinearLayout  
+        android:layout_width="match_parent"  
+        android:layout_height="60dp"  
+        android:background="#0c253f" >  
+<!--   @drawable/bottom -->
+        <RelativeLayout  
+            android:id="@+id/drugnews_layout"  
+            android:layout_width="0dp"  
+            android:layout_height="match_parent"  
+            android:layout_weight="1" >  
+  
+            <LinearLayout  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"  
+                android:layout_centerVertical="true"  
+                android:orientation="vertical" >  
+  
+                <ImageView  
+                    android:id="@+id/drugnews_image"  
+                    android:layout_width="wrap_content"  
+                    android:layout_height="wrap_content"  
+                    android:layout_gravity="center_horizontal"  
+                    android:src="@drawable/drugnews" />  
+  
+                <TextView  
+                    android:id="@+id/drugnews_text"  
+                    android:layout_width="wrap_content"  
+                    android:layout_height="wrap_content"  
+                    android:layout_gravity="center_horizontal"  
+                    android:text="药文"  
+                    android:textColor="#82858b" />  
+            </LinearLayout>  
+        </RelativeLayout>  
+  
+        <RelativeLayout  
+            android:id="@+id/drugsearch_layout"  
+            android:layout_width="0dp"  
+            android:layout_height="match_parent"  
+            android:layout_weight="1" >  
+  
+            <LinearLayout  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"  
+                android:layout_centerVertical="true"  
+                android:orientation="vertical" >  
+  
+                <ImageView  
+                    android:id="@+id/durgsearch_image"  
+                    android:layout_width="wrap_content"  
+                    android:layout_height="wrap_content"  
+                    android:layout_gravity="center_horizontal"  
+                    android:src="@drawable/drugsearch" />  
+  
+                <TextView  
+                    android:id="@+id/drugsearch_text"  
+                    android:layout_width="wrap_content"  
+                    android:layout_height="wrap_content"  
+                    android:layout_gravity="center_horizontal"  
+                    android:text="药搜"  
+                    android:textColor="#82858b" />  
+            </LinearLayout>  
+        </RelativeLayout>  
+  
+        <RelativeLayout  
+            android:id="@+id/druglibrary_layout"  
+            android:layout_width="0dp"  
+            android:layout_height="match_parent"  
+            android:layout_weight="1" >  
+  
+            <LinearLayout  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"  
+                android:layout_centerVertical="true"  
+                android:orientation="vertical" >  
+  
+                <ImageView  
+                    android:id="@+id/druglibrary_image"  
+                    android:layout_width="wrap_content"  
+                    android:layout_height="wrap_content"  
+                    android:layout_gravity="center_horizontal"  
+                    android:src="@drawable/druglibrary" />  
+  
+                <TextView  
+                    android:id="@+id/druglibrary_text"  
+                    android:layout_width="wrap_content"  
+                    android:layout_height="wrap_content"  
+                    android:layout_gravity="center_horizontal"  
+                    android:text="药库"  
+                    android:textColor="#82858b" />  
+            </LinearLayout>  
+        </RelativeLayout>  
+  
+        <RelativeLayout  
+            android:id="@+id/drugbbs_layout"  
+            android:layout_width="0dp"  
+            android:layout_height="match_parent"  
+            android:layout_weight="1" >  
+  
+            <LinearLayout  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"  
+                android:layout_centerVertical="true"  
+                android:orientation="vertical" >  
+  
+                <ImageView  
+                    android:id="@+id/drugbbs_image"  
+                    android:layout_width="wrap_content"  
+                    android:layout_height="wrap_content"  
+                    android:layout_gravity="center_horizontal"  
+                    android:src="@drawable/drugbbs" />  
+  
+                <TextView  
+                    android:id="@+id/drugbbs_text"  
+                    android:layout_width="wrap_content"  
+                    android:layout_height="wrap_content"  
+                    android:layout_gravity="center_horizontal"  
+                    android:text="药谈"  
+                    android:textColor="#82858b" />  
+            </LinearLayout>  
+        </RelativeLayout>  
+    </LinearLayout>  
+  
+</LinearLayout>  

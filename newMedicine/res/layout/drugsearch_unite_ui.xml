@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f0eb"
+    android:orientation="vertical" >
+	
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@color/common_top_bar_blue" >
+
+		<RelativeLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent" >
+
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerInParent="true"
+		        android:text="@string/strUniteSearch"
+		        android:textColor="#ffffff"
+		        android:textSize="20sp" />
+		    <Button
+            android:id="@+id/searchunite_btn_searching"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="6dp"
+            android:background="@drawable/btn_style"
+            android:text="@string/strSearching2" />
+		</RelativeLayout>
+       
+    </LinearLayout>
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_weight="1"
+	    android:layout_height="0dp"
+	    >
+	     <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/searchunite_edittext_chinaname"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="left|top"
+                android:background="@drawable/qq_edit_login"
+                android:hint="中文名" />
+
+            <EditText
+                android:id="@+id/searchunite_edittext_pingyinname"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="left|top"
+                android:background="@drawable/qq_edit_login"
+                android:hint="拼音名" />
+
+            <EditText
+                 android:id="@+id/searchunite_edittext_englishname"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="left|top"
+                android:background="@drawable/qq_edit_login"
+                android:hint="英文名" />
+
+            <EditText
+                 android:id="@+id/searchunite_edittext_preparetion"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="left|top"
+                android:background="@drawable/qq_edit_login"
+                android:hint="药品使用(性状)" />
+
+            <EditText
+                 android:id="@+id/searchunite_edittext_category"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="left|top"
+                android:background="@drawable/qq_edit_login"
+                android:hint="药品类别" />
+
+            <EditText
+                 android:id="@+id/searchunite_edittext_storage"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="left|top"
+                android:background="@drawable/qq_edit_login"
+                android:hint="药品存放" />
+        </LinearLayout>
+	
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="left|top"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/searchunite_edittext_description"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="left|top"
+                android:background="@drawable/qq_edit_login"
+                android:hint="药品描述" />
+
+            <EditText
+                android:id="@+id/searchunite_edittext_characters"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="left|top"
+                android:background="@drawable/qq_edit_login"
+                android:hint="药品规格"
+                 />
+        </LinearLayout>
+	</LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/searchunite_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"  
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/searchunite_btn_more"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="10dip"
+            android:layout_weight="1"
+            android:background="@drawable/button_register_bg"
+            android:gravity="center"
+            android:paddingBottom="7dp"
+            android:paddingTop="7dp"
+            android:text="更多描述"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        
+    </LinearLayout>
+<!--      <RelativeLayout -->
+<!--         android:layout_width="fill_parent" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_marginLeft="13dp" -->
+<!--         android:layout_marginRight="13dp" -->
+<!--         android:layout_below="@id/searchunite_ll" -->
+<!--         android:background="@drawable/login_back" > -->
+
+<!--         <ListView -->
+<!--             android:id="@+id/bbs_listview_showbbsdata" -->
+<!--             android:layout_width="fill_parent" -->
+<!--             android:layout_height="fill_parent" > -->
+<!--         </ListView> -->
+<!--     </RelativeLayout> -->
+</LinearLayout>

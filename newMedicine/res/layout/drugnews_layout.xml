@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+     <RelativeLayout
+         android:id="@+id/rt"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+    
+          >
+        
+         <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <!-- <EditText -->
+            <!-- android:id="@+id/search_categories" -->
+            <!-- android:layout_width="130.0px" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_marginLeft="10.0dip" -->
+            <!-- android:background="@drawable/qq_edit_login" -->
+            <!-- android:paddingLeft="45.0sp" -->
+            <!-- android:saveEnabled="true" /> -->
+
+
+            <!-- 下拉箭头 -->
+
+
+            <!-- <ImageButton -->
+            <!-- android:id="@+id/imageButton02" -->
+            <!-- android:layout_width="0dp" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_alignBottom="@+id/search_categories" -->
+            <!-- android:layout_alignRight="@+id/search_categories" -->
+            <!-- android:layout_alignTop="@+id/search_categories" -->
+            <!-- android:layout_marginRight="1.0dip" -->
+            <!-- android:background="@drawable/more_select" /> -->
+
+            <Button
+                android:id="@+id/news_button_interest"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/button_register_bg"
+                android:gravity="center"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp"
+                android:text="@string/strMedicalAnecdotes"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/news_button_health"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/button_login_bg"
+                android:gravity="center"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp"
+                android:text="@string/strHealthKnowledge"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </RelativeLayout>
+   
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:layout_below="@id/rt">
+        <ListView
+            android:id="@+id/news_listview_showinterest"         
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </ListView>
+        <ListView
+            android:id="@+id/news_listview_showhealth"         
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </ListView>
+
+    </RelativeLayout>
+    
+    
+    
+    
+
+
+</RelativeLayout>

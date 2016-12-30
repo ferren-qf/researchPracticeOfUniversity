@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f2f0eb" >
+
+   
+    <!-- 搜索框 -->
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="25dp"
+         >
+
+        <!-- paddingLeft 其中文字与文本框距离 -->
+
+        <EditText
+            android:id="@+id/search_edittext_inputconent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/qq_edit_login"
+            android:hint="@string/strSearchContent"
+            android:paddingBottom="12dp"
+            android:paddingTop="12dp"
+            android:paddingLeft="20.0sp"
+            android:saveEnabled="true"
+            android:singleLine="true"
+            android:textSize="18sp" />
+
+        <!-- 搜索按钮 -->
+        <!-- 先要alignBottom 再marginRight 才有用 -->
+
+
+      
+        
+    </RelativeLayout>
+	<!-- 搜索按钮 -->
+	<LinearLayout 
+	    android:id="@+id/ll"
+	    android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="68dp"
+        android:orientation="horizontal" > 
+<!-- 	<EditText -->
+<!--             android:id="@+id/search_categories" -->
+<!--             android:layout_width="130.0px" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_marginLeft="10.0dip" -->
+<!--             android:background="@drawable/qq_edit_login" -->
+<!--             android:paddingLeft="45.0sp" -->
+<!--             android:saveEnabled="true" /> -->
+
+        <!-- 下拉箭头 -->
+
+<!--         <ImageButton -->
+<!--             android:id="@+id/imageButton02" -->
+<!--             android:layout_width="0dp" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_alignBottom="@+id/search_categories" -->
+<!--             android:layout_alignRight="@+id/search_categories" -->
+<!--             android:layout_alignTop="@+id/search_categories" -->
+<!--             android:layout_marginRight="1.0dip" -->
+<!--             android:background="@drawable/more_select" /> -->
+	
+       <Button
+            android:id="@+id/drugsearch_btn1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="10dip"
+            android:layout_weight="3"
+            android:background="@drawable/button_register_bg"
+            android:gravity="center"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            android:text="@string/strUniteSearch"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/drugsearch_btn2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="10dip"
+            android:layout_weight="5"
+            android:background="@drawable/button_login_bg"
+            android:gravity="center"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            android:text="@string/strSearching"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+	</LinearLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+       	android:layout_below="@id/ll"
+        
+        android:layout_marginRight="13dp"
+        android:layout_marginLeft="13dp"
+        android:background="@drawable/login_back"
+         >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+             <ListView 
+                 android:id="@+id/search_listview_lenovos" 
+                 android:layout_width="fill_parent" 
+                 android:layout_height="fill_parent" > 
+            </ListView> 
+
+<!--              <LinearLayout  -->
+<!--                  android:id="@+id/ll_main_progress"  -->
+<!--                  android:layout_width="fill_parent"  -->
+<!--                  android:layout_height="wrap_content"  -->
+<!--                  android:layout_alignParentBottom="true"  -->
+<!--                  android:gravity="center"  -->
+<!--                 android:orientation="horizontal"  -->
+<!--                  android:visibility="gone" >  -->
+
+<!--                 <ProgressBar -->
+<!--                     android:layout_width="wrap_content" -->
+<!--                     android:layout_height="wrap_content" /> -->
+
+<!--                 <TextView                     -->
+<!--                     android:layout_width="wrap_content"  -->
+<!--                      android:layout_height="wrap_content"  -->
+<!--                     android:text="正在加载....." />  -->
+<!--             </LinearLayout> -->
+        </RelativeLayout>
+        <!--  -->
+    </RelativeLayout>
+
+</RelativeLayout>

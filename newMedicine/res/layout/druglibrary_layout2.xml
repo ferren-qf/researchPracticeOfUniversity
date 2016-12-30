@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/library_btn_ChemicalDrugs"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="3dip"
+                android:layout_marginLeft="6dip"
+                android:layout_marginRight="6dip"
+                android:layout_marginTop="6dip"
+                android:background="@drawable/button_register_bg"
+                android:gravity="center"
+                android:text="@string/strChemicalDrugs"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/library_btn_VegetableFatsAndExtracts"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="3dip"
+                android:layout_marginLeft="6dip"
+                android:layout_marginRight="3dip"
+                android:layout_marginTop="3dip"
+                android:layout_weight="2"
+                android:background="@drawable/button_login_bg"
+                android:gravity="center"
+                android:text="@string/strVegetableFatsAndExtracts"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/library_btn_PharmaceuticalExcipients"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="3dip"
+                android:layout_marginLeft="3dip"
+                android:layout_marginRight="6dip"
+                android:layout_marginTop="3dip"
+                android:layout_weight="1"
+                android:background="@drawable/button_sure_bg"
+                android:gravity="center"
+                android:text="@string/strPharmaceuticalExcipients"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="horizontal" >
+			 <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/login_btn_resign6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="6dip"
+                    android:layout_marginLeft="6dip"
+                    android:layout_marginRight="3dip"
+                    android:layout_marginTop="3dip"
+                    android:background="@drawable/button_sure_bg"
+                    android:gravity="center"
+                    android:text="@string/strChemicalDrugs6"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/library_btn_proprietarychinesemedicines"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="3dip"
+                    android:layout_marginLeft="3dip"
+                    android:layout_marginRight="6dip"
+                    android:layout_marginTop="3dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_register_bg"
+                    android:gravity="center"
+                    android:text="@string/strProprietaryChineseMedicines"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/library_btn_HerbsAndPieces"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="6dip"
+                    android:layout_marginLeft="3dip"
+                    android:layout_marginRight="6dip"
+                    android:layout_marginTop="3dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_login_bg"
+                    android:gravity="center"           
+                    android:text="@string/strHerbsAndPieces"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp" />
+            </LinearLayout>        
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

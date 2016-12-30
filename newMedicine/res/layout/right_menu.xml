@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1C232A"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/liv1"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#454545" />
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="14dp"
+        android:text="右侧菜单"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <Button
+        android:padding="10dp"
+        android:id="@+id/right_btn_about"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/liv1"
+        android:layout_marginTop="3dp"
+        android:background="@null"
+        android:gravity="right"
+        android:text="关于软件"
+        android:textColor="#888888"
+        android:textSize="20sp" />
+
+    <View
+        android:id="@+id/liv2"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/right_btn_about"
+        android:background="#16497F" />
+
+    
+
+    <Button
+        android:id="@+id/right_btn_feedback"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/liv2"
+        android:layout_marginTop="3dp"
+        android:background="@null"
+        android:gravity="right"
+        android:padding="10dp"
+        android:text="用户反馈"
+        android:textColor="#888888"
+        android:textSize="20sp" />
+
+    <View
+        android:id="@+id/liv3"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/right_btn_feedback"
+        android:background="#16497F" />
+    
+     <Button
+        android:id="@+id/right_btn_exit"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/liv3"
+        android:layout_marginTop="3dp"
+        android:background="@null"
+        android:gravity="right"
+        android:padding="10dp"
+        android:text="退出软件"
+        android:textColor="#888888"
+        android:textSize="20sp" />
+
+    <View
+        android:id="@+id/liv4"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/right_btn_exit"
+        android:background="#16497F" />
+
+</RelativeLayout>

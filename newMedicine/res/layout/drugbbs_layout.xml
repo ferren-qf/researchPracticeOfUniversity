@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+     >
+
+    <RelativeLayout
+        android:id="@+id/rt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@color/common_top_bar_blue" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/strDrugBBS"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+			<Button
+			     android:id="@+id/bbs_button_posting"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="6dp"
+      
+            android:background="@drawable/btn_style"
+            android:text="@string/strPosting"/>
+<!--          <Button -->
+<!--             android:id="@+id/bbs_button_posting" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:background="@drawable/button_login_bg" -->
+<!--             android:gravity="center" -->
+<!--            android:paddingBottom="4dp"  -->
+<!--         	android:paddingTop="4dp" -->
+<!--             android:text="@string/strPosting" -->
+<!--             android:textColor="@android:color/white" -->
+<!--             android:textSize="18sp"   -->
+<!--             android:layout_marginRight="12.0dip"    -->
+<!--          	android:layout_alignParentRight="true"    -->
+<!--          	android:layout_centerVertical="true"  -->
+<!--             /> -->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_below="@id/rt"
+        android:background="@drawable/login_back" >
+
+        <ListView
+            android:id="@+id/bbs_listview_showbbsdata"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </ListView>
+    </RelativeLayout>
+</RelativeLayout>
